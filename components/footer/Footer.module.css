@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+.footerWrapper {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    background-image: url("../../images/footer-snow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+.footerText {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    color: #000000;
+}

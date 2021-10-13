@@ -1,0 +1,13 @@
+.sliderPeng {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    transition: 1.5s;
+}
+.sliderWrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}

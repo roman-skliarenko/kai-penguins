@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Sztylet";
+    src: url("../../public/fonts/SztyletBd.otf");
+}
+
+.merchSectionWrapper {
+    position: relative;
+    padding-top: 70px;
+    padding-left: 130px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../../images/merch-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.merchSectionTitle {
+    margin: 0 0 90px;
+    color: #FFFFFF;
+    font-family: Sztylet, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 44px;
+}
+
+.merchSectionList {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.merchSectionListItem {
+    position: relative;
+    margin-right: 25px;
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 360px;
+    border: 10px solid white;
+    background-color: #413696;
+}
+
+.merchSectionListItem:first-child {
+    margin-left: 0;
+}
+
+.merchSectionListItem:after {
+    position: absolute;
+    background-image: url("../../images/symbol.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 45px;
+    height: 65px;
+}
+
+.merchSectionListItem:first-child:before {
+    content: '';
+    position: absolute;
+    background-image: url("../../images/snowLeft.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 90px;
+    left: -30px;
+    top: -30px;
+}
+
+
+.timeBordWrapper {
+    position: absolute;
+    padding-top: 85px;
+    padding-left: 47px;
+    right: 10px;
+    top: -55px;
+    background-image: url("../../images/time-bord.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 363px;
+}
+.timeBordWrapper:after {
+    content: '';
+    position: absolute;
+    background-image: url("../../images/snowRight.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 222px;
+    height: 75px;
+    bottom: 70px;
+    right: 130px;
+}
+
+.time {
+    font-family: Sztylet;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    transform: rotate(9.51deg);
+}

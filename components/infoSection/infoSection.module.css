@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "Sztylet";
+    src: url("../../public/fonts/SztyletBd.otf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+
+.infoSectionWrapper {
+    background-image: url("../../images/info-block-bg.png");
+    background-size: cover;
+    display: flex;
+    height: 920px;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.leftSideWrapper {
+    width: 720px;
+}
+
+.infoSectionTitle {
+    margin: 73px 0 25px;
+    font-family: Sztylet, serif;
+    font-weight: bold;
+    font-size: 102px;
+    line-height: 98px;
+    color: #483BA9;
+}
+
+.infoSectionText {
+    font-family: Poppins, serif;
+    margin: 0;
+    color: #5A5A5A;
+}
+
+.infoSectionSubText {
+    font-family: Poppins, serif;
+    color: #5A5A5A;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+
+.infoSectionSpan {
+    margin: 24px 0 72px;
+    font-weight: 700;
+    font-family: Poppins, serif;
+}
+
+.infoSectionSubTitle {
+    margin: 0;
+    font-family: Poppins, serif;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 44px;
+    color: #483BA9;
+}
+
+.infoSectionImageWrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 70px;
+    margin-left: 55px;
+}
+
+.infoSectionImage:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -23px;
+    background-image: url("../../public/img/snow-top.svg");
+    height: 140px;
+    width: 450px;
+}
+
+.infoSectionImage {
+    position: relative;
+    width: 410px;
+    height: 410px;
+    background-image: url("../../public/img/info-pengo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

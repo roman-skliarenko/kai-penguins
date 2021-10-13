@@ -9,9 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/material": "^5.0.3",
+    "@mui/styles": "^5.0.1",
+    "@types/material-ui": "^0.21.9",
+    "@types/node": "^16.10.3",
+    "@types/react": "^17.0.27",
+    "@types/react-image-gallery": "^1.0.5",
+    "classnames": "^2.3.1",
     "next": "11.1.2",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-image-gallery": "^1.2.7",
+    "react-siema": "^1.0.1",
+    "siema": "^1.5.1",
+    "typescript": "^4.4.3"
   },
   "devDependencies": {
     "eslint": "8.0.0",

@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "Sztylet";
+    src: url("../../public/fonts/SztyletBd.otf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+
+.getPengSectionWrapper {
+    background-image: url("../../images/get-section-bg.svg");
+    background-size: cover;
+    background-position: 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.getPengBlock {
+    display: flex;
+}
+.getPengBlockTitle {
+    margin: 0;
+    padding: 80px;
+    font-family: Sztylet;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 44px;
+    color: #483BA9;
+}
+.getBlockActionWrapper {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.getBlockActionTitle {
+    margin-right: 30px;
+    font-family: Sztylet;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+.getBlockActionContent {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #483BA9;
+}
+
+.getBlockImg {
+    position: relative;
+    width: 345px;
+    height: 345px;
+    background-image: url("../../images/get-block-img.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.getBlockImg:after {
+    position: absolute;
+    background-image: url("../../images/symbol.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 45px;
+    height: 65px;
+}
+.getBlockImg:before {
+    content: '';
+    position: absolute;
+    background-image: url("../../images/get-block-snow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 90px;
+    right: -15px;
+    top: -20px;
+}
+.getBlockAmount {
+    display: flex;
+    align-items: center;
+}
+.getBlockAmountCount {
+    width: 30px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    color: #000000;
+}
+.getBlockPrice {
+    display: flex;
+    align-items: center;
+}
+.getBlockPriceContent {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #483BA9;
+}
+
+.getBlockButton {
+    display: flex;
+}
+.amountButton {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url("../../images/cursor.svg"),auto;
+}
+.incrementButton {
+    background-image: url("../../images/increment.svg");
+    width: 62px;
+    height: 62px;
+}
+.incrementButton:after {
+    background: #fff;
+    content: "";
+    height: 100px;
+    left: -70px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+.incrementButton:hover:after{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.decrementButton {
+    margin-right: 10px;
+    background-image: url("../../images/decrement.svg");
+    width: 57px;
+    height: 57px;
+}
+.decrementButton:after {
+    background: #fff;
+    content: "";
+    height: 100px;
+    left: -70px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+.decrementButton:hover:after{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
