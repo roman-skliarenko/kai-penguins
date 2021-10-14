@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Footer.module.css'
-import styles from '../navigation/Nav.module.css';
+import socialLinkStyle from '../../styles/socialLink.module.css';
 import classNames from 'classnames';
 
 const Footer = () => {
@@ -18,14 +18,14 @@ const Footer = () => {
   }
   return (
     <div className={style.footerWrapper}>
-      <p className={style.footerText}>Smart Contract</p>
-      <div className={styles.socialLinkWrapper}>
-        <button className={classNames(styles.twitterButton, styles.socialLinkButton)}
-          onClick={twitterOnclickHandler}></button>
-        <button className={classNames(styles.boatButton, styles.socialLinkButton)}
-          onClick={boatOnclickHandler}></button>
-        <button className={classNames(styles.discordButton, styles.socialLinkButton)}
-          onClick={discordOnclickHandler}></button>
+      <p className={style.smartContract}>Smart Contract</p>
+      <div className={socialLinkStyle.socialLinkWrapper}>
+        <button className={classNames(socialLinkStyle.twitterButton, socialLinkStyle.socialLinkButton)}
+          onClick={twitterOnclickHandler}/>
+        <button className={classNames(socialLinkStyle.boatButton, socialLinkStyle.socialLinkButton)}
+          onClick={boatOnclickHandler}/>
+        <button className={classNames(socialLinkStyle.discordButton, socialLinkStyle.socialLinkButton)}
+          onClick={discordOnclickHandler}/>
       </div>
     </div>
   );

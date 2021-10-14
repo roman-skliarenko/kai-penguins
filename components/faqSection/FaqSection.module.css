@@ -7,39 +7,40 @@
     font-family: "Poppins";
     src: url("../../public/fonts/Poppins-Regular.ttf");
 }
-.test {
-    border: none;
-    outline: none;
-}
-.faqSectionWrapper {
+
+.sectionWrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.faqSectionTitle {
+
+.sectionTitle {
     margin: 0;
     padding-top: 100px;
     padding-bottom: 50px;
-    font-family: Sztylet;
+    font-family: Sztylet, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 35px;
     line-height: 44px;
     color: #483BA9;
 }
-.faqAccordionWrapper {
+
+.accordionWrapper {
     width: 1180px;
 }
+
 .titleTypography {
-    font-family: Sztylet;
+    font-family: Sztylet, serif;
     font-weight: bold;
     font-size: 23px;
     line-height: 64px;
     text-transform: capitalize;
     color: #000000;
 }
+
 .contentTypography {
-    font-family: Poppins;
+    font-family: Poppins, serif;
     font-weight: normal;
     font-size: 20px;
     line-height: 27px;

@@ -1,0 +1,82 @@
+.socialLinkWrapper {
+    display: flex;
+    align-items: center;
+}
+.socialLinkButton {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url("../images/cursor.svg"),auto;
+}
+.discordButton {
+    background-image: url("../images/social-icon/discord.png");
+    width: 62px;
+    height: 62px;
+}
+.discordButton:after {
+    background: #fff;
+    content: "";
+    height: 100px;
+    left: -70px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+.discordButton:hover:after{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.boatButton {
+    margin-right: 10px;
+    background-image: url("../images/social-icon/boat.png");
+    width: 57px;
+    height: 57px;
+}
+.boatButton:after {
+    background: #fff;
+    content: "";
+    height: 100px;
+    left: -70px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+.boatButton:hover:after{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.twitterButton {
+    margin-right: 10px;
+    background-image: url("../images/social-icon/twitter.png");
+    width: 61px;
+    height: 61px;
+}
+.twitterButton:after {
+    background: #fff;
+    content: "";
+    height: 100px;
+    left: -70px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+.twitterButton:hover:after{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}

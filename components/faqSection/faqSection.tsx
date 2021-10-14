@@ -1,65 +1,18 @@
-import React from 'react';
 import style from './FaqSection.module.css'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { makeStyles } from '@mui/styles';
 import classNames from 'classnames';
+import { useStyles } from '../../hooks/useStyles'
 
 const FaqSection = () => {
-  const useStyles = makeStyles({
-    root:{
-      border: 'none',
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      padding: 0,
-      outline: 'none',
-    },
-    rounded:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-    },
-    expanded:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-    },
-    disabled:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-    },
-    gutters:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-    },
-    region:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-    }
-  })
   const classes = useStyles();
-
   return (
-    <div className={style.faqSectionWrapper}>
-      <h2 className={style.faqSectionTitle}>FAQ</h2>
-      <div className={style.faqAccordionWrapper}>
+    <div className={style.sectionWrapper}>
+      <h2 className={style.sectionTitle}>FAQ</h2>
+      <div className={style.accordionWrapper}>
         <Accordion
           className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}
         >
@@ -70,14 +23,14 @@ const FaqSection = () => {
           >
             <Typography className={style.titleTypography}>What is Kai Penguin? </Typography>
           </AccordionSummary>
-          <AccordionDetails >
+          <AccordionDetails>
             <Typography className={style.contentTypography}>
               It is a small cute penguin. It wants to calmly chill on a piece of ice and mind its own business. It
               definitely does not want to fight for survival.
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion  className={classNames(classes.root,classes.region,classes.gutters,classes.rounded,classes.expanded) }>
+        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"
@@ -94,7 +47,7 @@ const FaqSection = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion  className={classNames(classes.root,classes.region,classes.gutters,classes.rounded,classes.expanded) }>
+        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"
@@ -108,7 +61,7 @@ const FaqSection = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion  className={classNames(classes.root,classes.region,classes.gutters,classes.rounded,classes.expanded) }>
+        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"
@@ -123,7 +76,7 @@ const FaqSection = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion  className={classNames(classes.root,classes.region,classes.gutters,classes.rounded,classes.expanded) }>
+        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"

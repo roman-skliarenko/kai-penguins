@@ -13,8 +13,8 @@
     background-size: contain;
     background-position: bottom;
 }
-.footerText {
-    font-family: Poppins;
+.smartContract {
+    font-family: Poppins, serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;

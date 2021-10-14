@@ -10,7 +10,6 @@ const GetPengSection = () => {
   }
   const decrementOnclickHandler = () => {
     setAmount(amount - 1)
-
   }
   const mintedOnclickHandler = () => {
     console.log('minted button click')
@@ -25,7 +24,7 @@ const GetPengSection = () => {
     <div className={style.getPengSectionWrapper}>
       <h2 className={style.getPengBlockTitle}>Get Your Penguin</h2>
       <div className={style.getPengBlock}>
-        <div className={style.getBlockImg}></div>
+        <div className={style.getBlockImg}/>
         <div className={style.getBlockActionWrapper}>
           <div className={style.getBlockAccount}>
             <span className={style.getBlockActionTitle}>ACCOUNT</span>
@@ -34,10 +33,10 @@ const GetPengSection = () => {
           <div className={style.getBlockAmount}>
             <span className={style.getBlockActionTitle}>AMOUNT</span>
             <button className={classNames(style.decrementButton, style.amountButton)}
-              onClick={decrementOnclickHandler}></button>
+              onClick={decrementOnclickHandler}/>
             <span className={style.getBlockAmountCount}>{amount}</span>
             <button className={classNames(style.incrementButton, style.amountButton)}
-              onClick={incrementOnclickHandler}></button>
+              onClick={incrementOnclickHandler}/>
           </div>
           <div className={style.getBlockPrice}>
             <span className={style.getBlockActionTitle}>TOTAL PRICE</span>
