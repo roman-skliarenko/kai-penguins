@@ -1,4 +1,6 @@
-import styles from './Nav.module.css';
+import style from './Nav.module.css';
+import buttonStyle from '../../styles/buttonsStyle.module.css';
+import navLinkStyle from '../../styles/socialLink.module.css';
 import { useState } from 'react';
 import classNames from 'classnames';
 
@@ -26,15 +28,18 @@ export default function Navigation() {
     alert('connect button click')
   }
 
-  return <nav className={styles.navWrapper}>
-    <div className={styles.socialLinkWrapper}>
-      <button className={classNames(styles.twitterButton,styles.socialLinkButton)} onClick={twitterOnclickHandler}></button>
-      <button className={classNames(styles.boatButton,styles.socialLinkButton)} onClick={boatOnclickHandler}></button>
-      <button className={classNames(styles.discordButton,styles.socialLinkButton)} onClick={discordOnclickHandler}></button>
+  return <nav className={style.navWrapper}>
+    <div className={style.socialLinkWrapper}>
+      <button className={classNames(navLinkStyle.twitterButton, navLinkStyle.socialLinkButton)}
+        onClick={twitterOnclickHandler}/>
+      <button className={classNames(navLinkStyle.boatButton, navLinkStyle.socialLinkButton)}
+        onClick={boatOnclickHandler}/>
+      <button className={classNames(navLinkStyle.discordButton, navLinkStyle.socialLinkButton)}
+        onClick={discordOnclickHandler}/>
     </div>
-    <div className={styles.navMenuWrapper}>
-      <button className={styles.mintedButton} onClick={mintedOnclickHandler}>Minted: {minted}k</button>
-      <button className={styles.connectButton} onClick={connectOnclickHandler}>Connect your wallet</button>
+    <div className={style.navBtnMenuWrapper}>
+      <button className={buttonStyle.mintedButton} onClick={mintedOnclickHandler}>Minted: {minted}k</button>
+      <button className={buttonStyle.connectButton} onClick={connectOnclickHandler}>Connect your wallet</button>
     </div>
   </nav>;
 }

@@ -8,108 +8,86 @@
     src: url("../../public/fonts/Poppins-Regular.ttf");
 }
 
-.getPengSectionWrapper {
-    background-image: url("../../images/get-section-bg.svg");
-    background-size: cover;
-    background-position: 0 0;
+.sectionWrapper {
+    background-image: url("../../images/get-bg.png");
+    background-size: contain;
+    padding-top: 115px;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.getPengBlock {
+.contentWrapper {
     display: flex;
 }
-.getPengBlockTitle {
-    margin: 0;
-    padding: 80px;
-    font-family: Sztylet;
+
+.sectionTitle {
+    margin: 0 0 76px;
+    font-family: Sztylet, serif;
     font-weight: bold;
     font-size: 35px;
     line-height: 44px;
     color: #483BA9;
 }
-.getBlockActionWrapper {
+
+.subjectWrapper {
     padding-left: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.getBlockActionTitle {
+.subjectTitle {
     margin-right: 30px;
-    font-family: Sztylet;
+    font-family: Sztylet, serif;
     font-weight: bold;
     font-size: 16px;
     line-height: 20px;
     color: #000000;
 }
-.getBlockActionContent {
-    font-family: Poppins;
+
+.subjectText {
+    font-family: Poppins, serif;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
     color: #483BA9;
 }
 
-.getBlockImg {
-    position: relative;
-    width: 345px;
-    height: 345px;
-    background-image: url("../../images/get-block-img.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.getBlockImg:after {
-    position: absolute;
-    background-image: url("../../images/symbol.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    content: "";
-    width: 45px;
-    height: 65px;
-}
-.getBlockImg:before {
-    content: '';
-    position: absolute;
-    background-image: url("../../images/get-block-snow.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 200px;
-    height: 90px;
-    right: -15px;
-    top: -20px;
-}
-.getBlockAmount {
+/*================= price*/
+.priceWrapper {
     display: flex;
     align-items: center;
 }
-.getBlockAmountCount {
+
+.eth {
+    font-family: Poppins, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+/*================= amount */
+.amountWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.amountCount {
     width: 30px;
-    font-family: Poppins;
+    font-family: Poppins, serif;
     font-weight: 600;
     font-size: 21px;
     line-height: 31px;
     color: #000000;
 }
-.getBlockPrice {
+
+/*=================== buttons */
+.sectionButtons {
     display: flex;
-    align-items: center;
-}
-.getBlockPriceContent {
-    font-family: Poppins;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
-    color: #483BA9;
 }
 
-.getBlockButton {
-    display: flex;
-}
 .amountButton {
     position: relative;
     overflow: hidden;
@@ -121,13 +99,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: url("../../images/cursor.svg"),auto;
+    cursor: url("../../images/cursor.svg"), auto;
 }
+
 .incrementButton {
     background-image: url("../../images/increment.svg");
     width: 62px;
     height: 62px;
 }
+
 .incrementButton:after {
     background: #fff;
     content: "";
@@ -140,16 +120,19 @@
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 50px;
 }
-.incrementButton:hover:after{
+
+.incrementButton:hover:after {
     left: 120%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 .decrementButton {
     margin-right: 10px;
     background-image: url("../../images/decrement.svg");
     width: 57px;
     height: 57px;
 }
+
 .decrementButton:after {
     background: #fff;
     content: "";
@@ -162,7 +145,43 @@
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
     width: 50px;
 }
-.decrementButton:hover:after{
+
+.decrementButton:hover:after {
     left: 120%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* ===================== image */
+.getSectionImg {
+    position: relative;
+    width: 345px;
+    height: 345px;
+    background-image: url("../../images/get-block-img.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.getSectionImg:after {
+    position: absolute;
+    background-image: url("../../images/symbol.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 45px;
+    height: 65px;
+}
+
+.getSectionImg:before {
+    content: '';
+    position: absolute;
+    background-image: url("../../images/get-block-snow.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 90px;
+    right: -15px;
+    top: -20px;
 }

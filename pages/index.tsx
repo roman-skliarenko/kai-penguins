@@ -1,4 +1,4 @@
-import style from '../styles/Home.module.css'
+import style from '../styles/home.module.css'
 import SimpleSlider from '../components/slider/slider';
 import Navigation from '../components/navigation/navigation'
 import InfoSection from '../components/infoSection/infoSection';
@@ -10,13 +10,19 @@ import FaqSection from '../components/faqSection/faqSection';
 export default function Home() {
   return (
     <div className={style.container}>
-      <Navigation/>
-      <main >
-        <SimpleSlider/>
-        <InfoSection/>
+      <header>
+          <Navigation/>
+      </header>
+      <main>
+        <div className={style.topBg}>
+          <SimpleSlider/>
+          <InfoSection/>
+        </div>
         <MerchSection/>
-        <GetPengSection/>
-        <FaqSection/>
+        <div className={style.bottomBg}>
+          <GetPengSection/>
+          <FaqSection/>
+        </div>
       </main>
       <footer>
         <Footer/>

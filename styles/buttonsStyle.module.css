@@ -1,0 +1,76 @@
+.mintedButton {
+    position: relative;
+    padding: 0;
+    margin-right: 10px;
+    background-image: url("../images/minted-btn.png");
+    width: 186px;
+    height: 68px;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6D60CB;
+    overflow: hidden;
+    cursor: url("../images/cursor.svg"),auto;
+}
+.mintedButton:after {
+    background: #fff;
+    content: "";
+    height: 100px;
+    left: -70px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+.mintedButton:hover:after{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+.connectButton {
+    padding: 0;
+    position: relative;
+    background-image: url("../images/connect-btn.png");
+    width: 262px;
+    height: 85px;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    transform: rotate(-5.53deg);
+    overflow: hidden;
+    cursor: url("../images/cursor.svg"),auto;
+}
+.connectButton:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+}
+.connectButton:hover:after{
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}

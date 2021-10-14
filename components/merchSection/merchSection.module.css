@@ -3,11 +3,11 @@
     src: url("../../public/fonts/SztyletBd.otf");
 }
 
-.merchSectionWrapper {
+.sectionWrapper {
     position: relative;
-    padding-top: 70px;
+    padding-top: 71px;
     padding-left: 130px;
-    height: 670px;
+    height: 679px;
     display: flex;
     flex-direction: column;
     background-image: url("../../images/merch-bg.png");
@@ -16,8 +16,8 @@
 
 }
 
-.merchSectionTitle {
-    margin: 0 0 90px;
+.sectionTitle {
+    margin: 0 0 89px;
     color: #FFFFFF;
     font-family: Sztylet, serif;
     font-style: normal;
@@ -26,31 +26,30 @@
     line-height: 44px;
 }
 
-.merchSectionList {
+.sectionList {
     margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
 }
 
-.merchSectionListItem {
+.sectionListItem {
     position: relative;
-    margin-right: 25px;
-    margin-left: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 360px;
-    height: 360px;
-    border: 10px solid white;
+    width: 361px;
+    height: 361px;
+    border: 9px solid white;
     background-color: #413696;
 }
 
-.merchSectionListItem:first-child {
-    margin-left: 0;
+.sectionListItem:not(:last-child) {
+    margin-right: 51px;
 }
 
-.merchSectionListItem:after {
+/*===================== items decor */
+.sectionListItem:after {
     position: absolute;
     background-image: url("../../images/symbol.png");
     background-repeat: no-repeat;
@@ -63,7 +62,7 @@
     height: 65px;
 }
 
-.merchSectionListItem:first-child:before {
+.sectionListItem:first-child:before {
     content: '';
     position: absolute;
     background-image: url("../../images/snowLeft.png");
@@ -75,7 +74,7 @@
     top: -30px;
 }
 
-
+/*====================== time bord */
 .timeBordWrapper {
     position: absolute;
     padding-top: 85px;
@@ -88,6 +87,7 @@
     width: 400px;
     height: 363px;
 }
+
 .timeBordWrapper:after {
     content: '';
     position: absolute;
@@ -101,7 +101,7 @@
 }
 
 .time {
-    font-family: Sztylet;
+    font-family: Sztylet, serif;
     font-style: normal;
     font-weight: bold;
     font-size: 30px;

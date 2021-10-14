@@ -37,15 +37,15 @@ const MerchSection = () => {
   }, [])
 
   return (
-    <div className={style.merchSectionWrapper}>
+    <div className={style.sectionWrapper}>
       <div>
-        <h2 className={style.merchSectionTitle}>Merch</h2>
+        <h2 className={style.sectionTitle}>Merch</h2>
         <div className={style.timeBordWrapper}>
           <div className={style.time}>{timer?.days}d : {timer?.hours}h : {timer?.minutes}m : {timer?.seconds}s</div>
         </div>
       </div>
-      <ul className={style.merchSectionList}>
-        {merchItems.map((item, index) => (<li key={index} className={style.merchSectionListItem}>
+      <ul className={style.sectionList}>
+        {merchItems.map((item, index) => (<li key={index} className={style.sectionListItem}>
           <Image
             src={item.src}
             alt="Picture of the author"

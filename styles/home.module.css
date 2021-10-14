@@ -1,0 +1,14 @@
+
+.container {
+    min-height: 100vh;
+    cursor: url("../images/cursor.svg"),auto;
+    /*background-image: url("../images/background.png");*/
+    /*background-repeat: repeat-x;*/
+}
+
+.topBg {
+    background-image: url('../images/top-bg.jpg');
+}
+.bottomBg {
+    background-image: url('../images/bottom-bg.jpg');
+}

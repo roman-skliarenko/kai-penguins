@@ -21,12 +21,12 @@ export default function SimpleSlider() {
   return (
     <div className={style.sliderWrapper} ref={slider}>
       {images.map((image, index) => (
-        <div key={index} className={style.sliderPeng}>
+        <div key={index} className={style.slide}>
           <Image
             src={image.src}
             alt="Picture of the author"
-            width={200}
-            height={200}
+            width={268}
+            height={267}
           />
         </div>
       ))}

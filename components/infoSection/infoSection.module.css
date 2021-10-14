@@ -1,55 +1,50 @@
-@font-face {
-    font-family: "Sztylet";
-    src: url("../../public/fonts/SztyletBd.otf");
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url("../../public/fonts/Poppins-Regular.ttf");
-}
-
-.infoSectionWrapper {
-    background-image: url("../../images/info-block-bg.png");
-    background-size: cover;
+.sectionWrapper {
+    /*background-size: cover;*/
     display: flex;
-    height: 920px;
-    padding-left: 130px;
-    padding-right: 130px;
+    height: 917px;
+    padding: 73px 130px 0 127px;
 }
 
-.leftSideWrapper {
+.textWrapper {
     width: 720px;
 }
 
-.infoSectionTitle {
-    margin: 73px 0 25px;
+.sectionTitle {
+    margin: 0 0 25px;
     font-family: Sztylet, serif;
     font-weight: bold;
     font-size: 102px;
     line-height: 98px;
     color: #483BA9;
 }
+.sectionTitleWrapper {
+    position: relative;
+}
+.sectionTitleWrapper:after {
+    content: '';
+    width: 60px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    right: 250px;
+    background-image: url("../../images/info-title-snow.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-.infoSectionText {
+.sectionText {
     font-family: Poppins, serif;
-    margin: 0;
+    margin: 0 0 24px;
     color: #5A5A5A;
 }
 
-.infoSectionSubText {
-    font-family: Poppins, serif;
-    color: #5A5A5A;
-    margin-top: 20px;
-    margin-bottom: 24px;
-}
-
-.infoSectionSpan {
-    margin: 24px 0 72px;
+.boldText {
+    margin: 0 0 72px;
     font-weight: 700;
     font-family: Poppins, serif;
 }
 
-.infoSectionSubTitle {
+.subTitle {
     margin: 0;
     font-family: Poppins, serif;
     font-weight: bold;
@@ -58,6 +53,13 @@
     color: #483BA9;
 }
 
+.subText {
+    font-family: Poppins, serif;
+    color: #5A5A5A;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+/*================= image */
 .infoSectionImageWrapper {
     display: flex;
     align-items: flex-end;
