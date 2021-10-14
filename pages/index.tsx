@@ -6,6 +6,7 @@ import MerchSection from '../components/merchSection/merchSection';
 import Footer from '../components/footer/footer';
 import GetPengSection from '../components/getPengSection/getPengSection';
 import FaqSection from '../components/faqSection/faqSection';
+import Slider from '../components/testSlider/testSlider';
 
 export default function Home() {
   return (
@@ -13,9 +14,10 @@ export default function Home() {
       <header>
           <Navigation/>
       </header>
+      <Slider/>
       <main>
         <div className={style.topBg}>
-          <SimpleSlider/>
+          {/*<SimpleSlider/>*/}
           <InfoSection/>
         </div>
         <MerchSection/>

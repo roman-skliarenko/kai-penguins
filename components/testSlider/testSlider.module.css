@@ -1,0 +1,52 @@
+.button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.img {
+    display: block;
+    width: 100%;
+}
+
+.section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.article {
+    display: flex;
+    width: 200%;
+    animation: bannerMove 20s linear infinite;
+}
+
+.article.paused {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.div {
+    width: 100%;
+}
+
+.ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.li {
+    width: 100%;
+    margin: 0 10px;
+}
+
+@keyframes bannerMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
