@@ -10,7 +10,7 @@
     height: 679px;
     display: flex;
     flex-direction: column;
-    background-image: url("../../images/merch-bg.png");
+    background-image: url("../../images/common/merch-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -51,7 +51,7 @@
 /*===================== items decor */
 .sectionListItem:after {
     position: absolute;
-    background-image: url("../../images/symbol.png");
+    background-image: url("../../images/common/symbol.png");
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -65,7 +65,7 @@
 .sectionListItem:first-child:before {
     content: '';
     position: absolute;
-    background-image: url("../../images/snowLeft.png");
+    background-image: url("../../images/common/snow-03.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 200px;
@@ -81,7 +81,7 @@
     padding-left: 47px;
     right: 10px;
     top: -55px;
-    background-image: url("../../images/time-bord.png");
+    background-image: url("../../images/common/time-bord.png");
     background-size: contain;
     background-repeat: no-repeat;
     width: 400px;
@@ -91,7 +91,7 @@
 .timeBordWrapper:after {
     content: '';
     position: absolute;
-    background-image: url("../../images/snowRight.png");
+    background-image: url("../../images/common/snow-02.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 222px;

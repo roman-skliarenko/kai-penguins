@@ -2,7 +2,7 @@
     position: relative;
     padding: 0;
     margin-right: 10px;
-    background-image: url("../images/minted-btn.png");
+    background-image: url("../images/buttons/mint-button.png");
     width: 186px;
     height: 68px;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 .connectButton {
     padding: 0;
     position: relative;
-    background-image: url("../images/connect-btn.png");
+    background-image: url("../images/buttons/connect-button.png");
     width: 262px;
     height: 85px;
     background-repeat: no-repeat;

@@ -9,7 +9,6 @@
 }
 
 .sectionWrapper {
-    background-image: url("../../images/get-bg.png");
     background-size: contain;
     padding-top: 115px;
     background-repeat: no-repeat;
@@ -103,7 +102,7 @@
 }
 
 .incrementButton {
-    background-image: url("../../images/increment.svg");
+    background-image: url("../../images/buttons/increment.png");
     width: 62px;
     height: 62px;
 }
@@ -128,7 +127,7 @@
 
 .decrementButton {
     margin-right: 10px;
-    background-image: url("../../images/decrement.svg");
+    background-image: url("../../images/buttons/decrement.png");
     width: 57px;
     height: 57px;
 }
@@ -156,14 +155,14 @@
     position: relative;
     width: 345px;
     height: 345px;
-    background-image: url("../../images/get-block-img.svg");
+    background-image: url("../../images/common/default-penguin.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .getSectionImg:after {
     position: absolute;
-    background-image: url("../../images/symbol.png");
+    background-image: url("../../images/common/symbol.png");
     background-repeat: no-repeat;
     background-size: cover;
     left: 50%;
@@ -177,7 +176,7 @@
 .getSectionImg:before {
     content: '';
     position: absolute;
-    background-image: url("../../images/get-block-snow.svg");
+    background-image: url("../../images/common/snow-04.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 200px;

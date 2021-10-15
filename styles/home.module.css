@@ -2,13 +2,13 @@
 .container {
     min-height: 100vh;
     cursor: url("../images/cursor.svg"),auto;
-    /*background-image: url("../images/background.png");*/
-    /*background-repeat: repeat-x;*/
 }
 
 .topBg {
-    background-image: url('../images/top-bg.jpg');
+    background-image: url('../images/info-bg.png');
+    background-size: cover;
 }
 .bottomBg {
-    background-image: url('../images/bottom-bg.jpg');
+    background-image: url('../images/get-penguin-bg.png');
+    background-size: cover;
 }

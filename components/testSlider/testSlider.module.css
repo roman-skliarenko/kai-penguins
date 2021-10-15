@@ -32,11 +32,6 @@
     margin: 0;
 }
 
-.li {
-    width: 100%;
-    margin: 0 10px;
-}
-
 @keyframes bannerMove {
     0% {
         transform: translateX(0);

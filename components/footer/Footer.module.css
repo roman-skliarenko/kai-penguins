@@ -4,21 +4,21 @@
 }
 .footerWrapper {
     position: relative;
-    margin-top: 100px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 250px;
-    background-image: url("../../images/bottom-bg.jpg");
+    height: 350px;
+    background-image: url("../../images/footer-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
 }
 .footerWrapper:after {
     content: '';
     width: 100%;
-    height: 111px;
-    background-image: url("../../images/bottom-snow.png");
+    height: 150px;
+    background-image: url("../../images/common/snow-06.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;

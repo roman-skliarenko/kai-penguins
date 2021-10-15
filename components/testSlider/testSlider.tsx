@@ -1,7 +1,6 @@
 import React from 'react';
 import style from './testSlider.module.css'
-import Image from 'next/image';
-import { images } from '../../constants/sliderImg';
+import SliderItems from '../sliderItems/sliderItems';
 
 const TestSlider = () => {
   return (
@@ -10,28 +9,12 @@ const TestSlider = () => {
         <article className={style.article}>
           <div>
             <ul className={style.ul}>
-              {images.map((image, index) => (
-                <li className={style.li} key={index}>
-                  <Image
-                    src={images[index].src}
-                    alt="Picture of the author"
-                    width={500}
-                    height={500}
-                  />
-                </li>))}
+             <SliderItems/>
             </ul>
           </div>
           <div>
             <ul className={style.ul}>
-              {images.map((image, index) => (
-                <li className={style.li} key={index}>
-                  <Image
-                    src={images[index].src}
-                    alt="Picture of the author"
-                    width={500}
-                    height={500}
-                  />
-                </li>))}
+              <SliderItems/>
             </ul>
           </div>
         </article>

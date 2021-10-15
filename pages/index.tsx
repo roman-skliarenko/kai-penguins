@@ -1,5 +1,4 @@
 import style from '../styles/home.module.css'
-import SimpleSlider from '../components/slider/slider';
 import Navigation from '../components/navigation/navigation'
 import InfoSection from '../components/infoSection/infoSection';
 import MerchSection from '../components/merchSection/merchSection';
@@ -12,12 +11,11 @@ export default function Home() {
   return (
     <div className={style.container}>
       <header>
-          <Navigation/>
+        <Navigation/>
       </header>
-      <Slider/>
       <main>
         <div className={style.topBg}>
-          {/*<SimpleSlider/>*/}
+          <Slider/>
           <InfoSection/>
         </div>
         <MerchSection/>

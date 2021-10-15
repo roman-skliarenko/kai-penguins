@@ -1,5 +1,4 @@
 .sectionWrapper {
-    /*background-size: cover;*/
     display: flex;
     height: 917px;
     padding: 73px 130px 0 127px;
@@ -27,7 +26,7 @@
     position: absolute;
     top: 100px;
     right: 250px;
-    background-image: url("../../images/info-title-snow.png");
+    background-image: url("../../images/common/snow-01.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
