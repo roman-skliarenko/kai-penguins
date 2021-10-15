@@ -41,11 +41,12 @@
     margin: 0 0 72px;
     font-weight: 700;
     font-family: Poppins, serif;
+    color: #5A5A5A;
 }
 
 .subTitle {
     margin: 0;
-    font-family: Poppins, serif;
+    font-family:Sztylet, serif;
     font-weight: bold;
     font-size: 35px;
     line-height: 44px;

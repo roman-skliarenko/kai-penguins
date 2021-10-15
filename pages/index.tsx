@@ -6,6 +6,7 @@ import Footer from '../components/footer/footer';
 import GetPengSection from '../components/getPengSection/getPengSection';
 import FaqSection from '../components/faqSection/faqSection';
 import Slider from '../components/testSlider/testSlider';
+import TestAccordion from '../components/testAccordion/testAccordion';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
         <MerchSection/>
         <div className={style.bottomBg}>
           <GetPengSection/>
-          <FaqSection/>
+          <TestAccordion/>
         </div>
       </main>
       <footer>
