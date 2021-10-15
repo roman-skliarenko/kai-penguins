@@ -1,24 +1,9 @@
 import React from 'react';
 import style from './testSlider.module.css'
 import Image from 'next/image';
+import { images } from '../../constants/sliderImg';
 
 const TestSlider = () => {
-  const images = [
-    {
-      src: '/img/peng-one.png',
-    },
-    {
-      src: '/img/peng-two.png',
-    },
-    {
-      src: '/img/peng-three.png',
-    },
-    {
-      src: '/img/peng-four.png',
-    },
-    {
-      src: '/img/peng-five.png',
-    },]
   return (
     <div>
       <section className={style.section}>

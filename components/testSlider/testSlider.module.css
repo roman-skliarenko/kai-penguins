@@ -21,11 +21,6 @@
     animation: bannerMove 20s linear infinite;
 }
 
-.article.paused {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-}
-
 .div {
     width: 100%;
 }
