@@ -1,0 +1,278 @@
+@font-face {
+    font-family: "Sztylet";
+    src: url("../../public/fonts/SztyletBd.otf");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionTitle {
+    margin: 0;
+    padding: 50px 0 20px;
+    font-family: Sztylet, serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+    color: #483BA9;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.getSectionImg {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    background-image: url("../../images/common/default-penguin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 50px;
+}
+
+.getSectionImg:after {
+    position: absolute;
+    background-image: url("../../images/common/symbol.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 45px;
+    height: 65px;
+}
+
+.getSectionImg:before {
+    content: '';
+    position: absolute;
+    background-image: url("../../images/common/snow-04.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 160px;
+    height: 70px;
+    right: -15px;
+    top: -20px;
+}
+
+.subjectTitle {
+    margin-top: 5px;
+    font-family: Sztylet, serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.subjectText {
+    font-family: Poppins, serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #483BA9;
+}
+
+.accountWrapper {
+    height: 65px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accountWrapper .subjectText {
+    width: 150px;
+}
+
+.amountWrapper {
+    height: 65px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.amountButtonWrapper {
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.amountCount {
+    width: 30px;
+    font-family: Poppins, serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 31px;
+    color: #000000;
+}
+
+.priceWrapper {
+    height: 65px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.priceTextWrapper {
+    padding-left: 10px;
+    width: 150px;
+    display: flex;
+    align-items: baseline;
+}
+
+.eth {
+    font-family: Poppins, serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.sectionButtons {
+    padding: 20px 20px 0 20px;
+    display: flex;
+}
+
+@media (min-width: 1440px) {
+    .sectionWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .sectionTitle {
+        margin: 0 0 76px;
+        font-family: Sztylet, serif;
+        font-weight: bold;
+        font-size: 35px;
+        line-height: 44px;
+        color: #483BA9;
+    }
+
+    .subjectWrapper {
+        padding-left: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .subjectTitle {
+        width: 180px;
+        margin-right: 30px;
+        font-family: Sztylet, serif;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    .subjectText {
+        font-family: Poppins, serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #483BA9;
+    }
+
+    /*================= account*/
+    .accountWrapper .subjectText {
+        width: 100%;
+    }
+
+    /*================= price*/
+    .priceWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .priceTextWrapper {
+        width: 100%;
+    }
+
+    .eth {
+        font-family: Poppins, serif;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    /*================= amount */
+    .amountWrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .amountButtonWrapper {
+        width: 100%;
+    }
+
+    .amountCount {
+        width: 30px;
+        font-family: Poppins, serif;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 31px;
+        color: #000000;
+    }
+
+    /*=================== buttons */
+    .sectionButtons {
+        display: flex;
+    }
+
+    /* ===================== image */
+    .getSectionImg {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 345px;
+        height: 345px;
+        background-image: url("../../images/common/default-penguin.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .getSectionImg:after {
+        position: absolute;
+        background-image: url("../../images/common/symbol.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: "";
+        width: 45px;
+        height: 65px;
+    }
+
+    .getSectionImg:before {
+        content: '';
+        position: absolute;
+        background-image: url("../../images/common/snow-04.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 90px;
+        right: -15px;
+        top: -20px;
+    }
+}

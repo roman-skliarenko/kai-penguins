@@ -1,16 +1,51 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.MuiAccordion-root, .MuiAccordion-rounded, .Mui-expanded, .Mui-disabled, .MuiAccordion-gutters, .MuiAccordion-region {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+.MuiAccordionActions-spacing, .MuiAccordionActions-root, .MuiAccordionDetails-root {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding-bottom: 0;
+    padding-top: 0;
+
+}
+.MuiAccordionSummary-root, .Mui-expanded, .Mui-focusVisible, .Mui-disabled, .MuiAccordionSummary-gutters, .MuiAccordionSummary-contentGutters, .MuiAccordionSummary-content, .MuiAccordionSummary-expandIconWrapper {
+    margin: 0 0 5px;
+
+}
+.MuiAccordionSummary-content.Mui-expanded.css-o4b71y-MuiAccordionSummary-content {
+    margin: 0;
+    padding: 0;
+}
+.MuiAccordion-root {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.MuiAccordion-root:before {
+    display: none;
 }

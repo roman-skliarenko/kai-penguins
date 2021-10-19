@@ -1,11 +1,11 @@
-import style from './Nav.module.css';
+import style from './header.module.css';
 import buttonStyle from '../../styles/buttonsStyle.module.css';
 import navLinkStyle from '../../styles/socialLink.module.css';
 import { useState } from 'react';
 import classNames from 'classnames';
 
 
-export default function Navigation() {
+export default function Header() {
   const [minted, setMinted] = useState(1.2)
   const twitterOnclickHandler = () => {
     console.log('twitter button click')

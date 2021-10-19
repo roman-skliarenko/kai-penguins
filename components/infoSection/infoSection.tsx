@@ -12,6 +12,9 @@ export default function InfoSection() {
         predators have different plans. Your Kai Penguin has to prepare for the upcoming attack and mobilize his
         strength to overcome the enemies.</p>
       <p className={style.boldText}>Start your collection and adventure with Kai Penguins.</p>
+      <div className={style.mobileImageWrapper}>
+        <div className={style.mobileImage}/>
+      </div>
       <h2 className={style.subTitle}>Metaverse</h2>
       <p className={style.subText}>The Vingi is approaching - one of the most important and
         sacred holidays of all penguins. On this day,

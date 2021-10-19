@@ -1,33 +1,42 @@
-.sectionWrapper {
-    display: flex;
-    height: 917px;
-    padding: 73px 130px 0 127px;
+@font-face {
+    font-family: "Sztylet";
+    src: url("../../public/fonts/SztyletBd.otf");
 }
 
-.textWrapper {
-    width: 720px;
+@font-face {
+    font-family: "Poppins";
+    src: url("../../public/fonts/Poppins-Regular.ttf");
+}
+
+.sectionWrapper {
+    padding: 0 20px;
+    width: 320px;
+    margin: 0 auto;
 }
 
 .sectionTitle {
-    margin: 0 0 25px;
+    margin: 0;
+    padding: 45px 0 15px 0;
     font-family: Sztylet, serif;
     font-weight: bold;
-    font-size: 102px;
-    line-height: 98px;
+    font-size: 55px;
+    line-height: 58px;
     color: #483BA9;
 }
+
 .sectionTitleWrapper {
     position: relative;
 }
+
 .sectionTitleWrapper:after {
     content: '';
-    width: 60px;
-    height: 50px;
+    width: 40px;
+    height: 20px;
     position: absolute;
-    top: 100px;
-    right: 250px;
+    right: 15px;
+    bottom: 45px;
     background-image: url("../../images/common/snow-01.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -38,50 +47,164 @@
 }
 
 .boldText {
-    margin: 0 0 72px;
+    margin: 0 0 25px;
     font-weight: 700;
     font-family: Poppins, serif;
     color: #5A5A5A;
 }
 
 .subTitle {
-    margin: 0;
-    font-family:Sztylet, serif;
+    margin: 20px 0 0;
+    font-family: Sztylet, serif;
     font-weight: bold;
-    font-size: 35px;
-    line-height: 44px;
+    font-size: 26px;
+    line-height: 32px;
     color: #483BA9;
 }
 
 .subText {
     font-family: Poppins, serif;
     color: #5A5A5A;
-    margin-top: 20px;
-    margin-bottom: 24px;
-}
-/*================= image */
-.infoSectionImageWrapper {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 70px;
-    margin-left: 55px;
+    margin: 0;
+    padding: 25px 0;
 }
 
-.infoSectionImage:after {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: -23px;
-    background-image: url("../../public/img/snow-top.svg");
-    height: 140px;
-    width: 450px;
+/*!*================= image *!*/
+.mobileImageWrapper {
+    margin: 0;
+    padding: 0;
 }
 
-.infoSectionImage {
+.mobileImage {
     position: relative;
-    width: 410px;
-    height: 410px;
+    width: 255px;
+    height: 255px;
+    margin: 0 auto;
     background-image: url("../../public/img/info-pengo.svg");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.mobileImage:after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -15px;
+    background-image: url("../../public/img/snow-top.svg");
+    background-size: cover;
+    height: 87px;
+    width: 281px;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .sectionWrapper {
+        width: 600px;
+    }
+
+    .sectionTitleWrapper:after {
+        right: 180px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .sectionWrapper {
+        width: 1440px;
+        display: flex;
+        height: 800px;
+        padding: 73px 130px 0 127px;
+    }
+
+    .textWrapper {
+        width: 720px;
+    }
+
+    .mobileImageWrapper {
+        display: none;
+    }
+
+    .sectionTitle {
+        padding: 0;
+        font-family: Sztylet, serif;
+        font-weight: bold;
+        font-size: 102px;
+        line-height: 98px;
+        color: #483BA9;
+    }
+
+    .sectionTitleWrapper {
+        width: 515px;
+        position: relative;
+    }
+
+    .sectionTitleWrapper:after {
+        content: '';
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        top: 100px;
+        right: 50px;
+        background-image: url("../../images/common/snow-01.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .sectionText {
+        font-family: Poppins, serif;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 24px;
+        color: #5A5A5A;
+    }
+
+    .boldText {
+        margin: 0 0 25px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        font-family: Poppins, serif;
+        color: #5A5A5A;
+    }
+
+    .subTitle {
+        margin: 20px 0 0;
+        font-family: Sztylet, serif;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 32px;
+        color: #483BA9;
+    }
+
+    .subText {
+        font-family: Poppins, serif;
+        color: #5A5A5A;
+        margin: 0;
+        padding: 25px 0;
+    }
+
+    /*=================== image*/
+    .infoSectionImage {
+        position: relative;
+        background-image: url("../../public/img/info-pengo.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 410px;
+        height: 410px;
+    }
+
+    .infoSectionImageWrapper {
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 70px;
+        margin-left: 55px;
+    }
+
+    .infoSectionImage:after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: -23px;
+        background-image: url("../../public/img/snow-top.svg");
+        height: 140px;
+        width: 450px;
+    }
 }

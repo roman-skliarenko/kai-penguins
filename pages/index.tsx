@@ -1,18 +1,21 @@
 import style from '../styles/home.module.css'
-import Navigation from '../components/navigation/navigation'
+import Header from '../components/header/header'
 import InfoSection from '../components/infoSection/infoSection';
 import MerchSection from '../components/merchSection/merchSection';
 import Footer from '../components/footer/footer';
-import GetPengSection from '../components/getPengSection/getPengSection';
+import GetSection from '../components/getSection/getPengSection';
 import FaqSection from '../components/faqSection/faqSection';
-import Slider from '../components/testSlider/testSlider';
-import TestAccordion from '../components/testAccordion/testAccordion';
+import Slider from '../components/slider/slider';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(()=>{
+
+  },[])
   return (
     <div className={style.container}>
       <header>
-        <Navigation/>
+        <Header/>
       </header>
       <main>
         <div className={style.topBg}>
@@ -21,8 +24,8 @@ export default function Home() {
         </div>
         <MerchSection/>
         <div className={style.bottomBg}>
-          <GetPengSection/>
-          <TestAccordion/>
+          <GetSection/>
+          <FaqSection/>
         </div>
       </main>
       <footer>

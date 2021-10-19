@@ -4,69 +4,14 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import classNames from 'classnames';
-import { makeStyles } from '@mui/styles';
 
 const FaqSection = () => {
-  const useStyles = makeStyles({
-    root:{
-      border: 'none',
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      padding: 0,
-      outline: 'none',
-      background: "transparent",
-    },
-    rounded:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-      background: "transparent",
-    },
-    expanded:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-      background: "transparent",
-    },
-    disabled:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-      background: "transparent",
-    },
-    gutters:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-      background: "transparent",
-    },
-    region:{
-      boxShadow: 'none',
-      margin: '1px',
-      marginBottom: '1px',
-      border: 'none',
-      outline: 'none',
-      background: "transparent",
-    }
-  })
-  const classes = useStyles();
+
   return (
     <div className={style.sectionWrapper}>
       <h2 className={style.sectionTitle}>FAQ</h2>
       <div className={style.accordionWrapper}>
-        <Accordion
-          className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}
-        >
+        <Accordion>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel1a-content"
@@ -81,7 +26,7 @@ const FaqSection = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
+        <Accordion >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"
@@ -98,7 +43,7 @@ const FaqSection = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
+        <Accordion >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"
@@ -112,7 +57,7 @@ const FaqSection = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
+        <Accordion >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"
@@ -127,7 +72,7 @@ const FaqSection = () => {
             </Typography>
           </AccordionDetails>
         </Accordion>
-        <Accordion className={classNames(classes.root, classes.region, classes.gutters, classes.rounded, classes.expanded)}>
+        <Accordion >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon/>}
             aria-controls="panel2a-content"

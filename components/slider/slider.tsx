@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './testSlider.module.css'
-import SliderItems from '../sliderItems/sliderItems';
+import style from './slider.module.css'
+import SliderItems from './sliderItems/sliderItems';
 
-const TestSlider = () => {
+const Slider = () => {
   return (
     <div>
       <section className={style.section}>
@@ -23,4 +23,4 @@ const TestSlider = () => {
   );
 };
 
-export default TestSlider;
+export default Slider;

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image'
 import style from './merchSection.module.css'
-import { merchItems } from '../../constants/merchItems';
 
 const MerchSection = () => {
   const [timer, setTimer] = useState(null)
@@ -38,21 +36,22 @@ const MerchSection = () => {
 
   return (
     <div className={style.sectionWrapper}>
-      <div>
+      <div className={style.test1}>
         <h2 className={style.sectionTitle}>Merch</h2>
         <div className={style.timeBordWrapper}>
           <div className={style.time}>{timer?.days}d : {timer?.hours}h : {timer?.minutes}m : {timer?.seconds}s</div>
         </div>
       </div>
       <ul className={style.sectionList}>
-        {merchItems.map((item, index) => (<li key={index} className={style.sectionListItem}>
-          <Image
-            src={item.src}
-            alt="Picture of the author"
-            width={200}
-            height={200}
-          />
-        </li>))}
+        <li className={style.sectionListItem}>
+          <div className={style.merchOne}/>
+        </li>
+        <li className={style.sectionListItem}>
+          <div className={style.merchTwo}/>
+        </li>
+        <li className={style.sectionListItem}>
+          <div className={style.merchThree}/>
+        </li>
       </ul>
     </div>
   );

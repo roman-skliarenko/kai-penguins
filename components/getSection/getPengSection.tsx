@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import style from './GetPengSection.module.css'
-import buttonsStyle from '../../styles/buttonsStyle.module.css';
+import style from './getSection.module.css'
+import buttonStyle from '../../styles/buttonsStyle.module.css'
+import buttonsStyle from '../../styles/buttonsStyle.module.css'
 import classNames from 'classnames';
 
 const GetPenguinSection = () => {
@@ -26,22 +27,27 @@ const GetPenguinSection = () => {
       <div className={style.contentWrapper}>
         <div className={style.getSectionImg}/>
         <div className={style.subjectWrapper}>
-          <div>
+          <div className={style.accountWrapper}>
             <span className={style.subjectTitle}>ACCOUNT</span>
             <span className={style.subjectText}>Please Connect MetaMask</span>
           </div>
           <div className={style.amountWrapper}>
             <span className={style.subjectTitle}>AMOUNT</span>
-            <button className={classNames(style.decrementButton, style.amountButton)}
-              onClick={decrementOnclickHandler}/>
-            <span className={style.amountCount}>{amount}</span>
-            <button className={classNames(style.incrementButton, style.amountButton)}
-              onClick={incrementOnclickHandler}/>
+            <div className={style.amountButtonWrapper}>
+              <button className={classNames(buttonStyle.decrementButton, buttonStyle.amountButton)}
+                onClick={decrementOnclickHandler}/>
+              <span className={style.amountCount}>{amount}</span>
+              <button className={classNames(buttonStyle.incrementButton, buttonStyle.amountButton)}
+                onClick={incrementOnclickHandler}/>
+            </div>
+
           </div>
           <div className={style.priceWrapper}>
             <span className={style.subjectTitle}>TOTAL PRICE</span>
-            <span className={style.subjectText}>0.059</span>
-            <span className={style.eth}> &nbsp;ETH</span>
+            <div className={style.priceTextWrapper}>
+              <span className={style.subjectText}>0.059</span>
+              <span className={style.eth}> &nbsp;ETH</span>
+            </div>
           </div>
           <div className={style.sectionButtons}>
             <button className={buttonsStyle.mintedButton} onClick={mintedOnclickHandler}>Minted: {minted}k</button>
